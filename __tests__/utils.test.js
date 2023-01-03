@@ -1,17 +1,4 @@
-const { piToColour } = require("../utils.js");
-
-const greyArray = {
-  0: "#FFFFFF",
-  1: "#E5E5E5",
-  2: "#CDCDCD",
-  3: "#B3B3B3",
-  4: "#9A9A9A",
-  5: "#808080",
-  6: "#666666",
-  7: "#4D4D4D",
-  8: "#323232",
-  9: "#181818",
-};
+const { greyArray, piToColour } = require("../utils.js");
 
 describe("piToColour function", () => {
   test("function returns an object", () => {
