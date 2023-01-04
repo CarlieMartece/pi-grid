@@ -1,4 +1,4 @@
-const { greyArray, piToColour } = require("../utils.js");
+const { greyArray, piToColour } = require("../scripts/utils.js");
 
 describe("piToColour function", () => {
   test("function returns an object", () => {
