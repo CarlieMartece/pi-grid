@@ -11,12 +11,12 @@ exports.greyArray = {
     9: "#181818",
   };
 
-exports.piToColour = (num, array) => {
+exports.piToColour = (num, colourArray) => {
   let piObject = {};
-  const pi = Math.PI.toFixed(num);
-  const piArray = ("" + pi).split("").splice(1);
+  const pi = Math.PI.toFixed(num + 2);
+  const piArray = ("" + pi).split("").splice(1, num + 1);
   for (let i = 1; i < num + 1; i++) {
-    piObject[i] = array[piArray[i]];
+    piObject[i] = colourArray[piArray[i]];
   }
   return piObject;
 };
