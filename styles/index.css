@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a {
+  color: aqua;
+}
+
+#backdrop {
+  background-image: url(../images/1116.jpg);
+  background-size: 265%;
+  background-position: left;
+  filter: invert(100%);
+  height: 100%;
+  padding-top: 5%;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption p {
+    margin-right: 30px;
+    text-align: right;
+}
+
+.form-item {
+    display: inline-block;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+p {
+  text-align: left;
+}
+
+.pi-stuff {
+  background-color: #314159;
+  color: aliceblue;
+  filter: invert(100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#pumpkin-pi {
+  width: 80%;
+}
+
+section {
+    margin-top: 30px;
+}
+
+#submit {
+    margin-left: 60px;
+}

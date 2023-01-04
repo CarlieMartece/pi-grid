@@ -1,131 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>ThePiMaker</title>
-  </head>
 
-  <body>
-    <main>
-      <h1>Ey Up Pi Fans!</h1>
-      <section>
-        <h2>Pick your <em>pi</em>...</h2>
-        <p>
-          We can't show all the pi, it would take forever. But we can
-          show some of the pi.
-        </p>
-        <form action="./pi-grid.html">
-          <fieldset>
-            <legend><h3>Grid Size</h3></legend>
-            <label
-              ><input
-                checked
-                id="L10W10"
-                name="grid-size"
-                type="radio"
-                value="L10W10"
-              />
-              10 x 10</label
-            >
-            <label
-              ><input
-                id="L100W100"
-                name="grid-size"
-                type="radio"
-                value="L100W100"
-              />
-              100 x 100</label
-            >
-            <label
-              ><input  
-                id="L100W1000"
-                name="grid-size"
-                type="radio"
-                value="L100W1000"
-              />
-              100 x 1000</label
-            >
-            <label
-              ><input
-                id="L1000W100"
-                name="grid-size"
-                type="radio"
-                value="L1000W100"
-              />
-              1000 x 100</label
-            >
-            <label
-              ><input
-                id="L1000W1000"
-                name="grid-size"
-                type="radio"
-                value="L1000W1000"
-              />
-              1000 x 1000</label
-            >
-          </fieldset>
-          
-          <fieldset>
-            <legend><h3>Grid Colours</h3></legend>
-            <label
-              ><input 
-                checked  
-                id="grey" 
-                name="grid-colour" 
-                type="radio" 
-                value="grey" 
-              />
-              Greyscale</label
-            >
-            <label
-              ><input
-                id="purple"
-                name="grid-colour"
-                type="radio"
-                value="purple"
-              />
-              Purples</label
-            >
-          </fieldset>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>The Pi Maker</title>
+</head>
 
-          <button type="submit">Submit</button>
-        </form>
-        <!--TODO: Hack infinity to find all pi-->
-      </section>
+<body>
+  <div id="backdrop">
+    <div class="pi-stuff">
+      <main>
+        <h1>Ey Up, Pi Fans!</h1>
+        <section>
+          <h2>Pick your <em>pi</em>...</h2>
+          <p>We can't show all the pi, it would take forever.</p>
+          <p>But we can show some of the pi.</p>
+          <form action="./pi-grid.html">
+            <fieldset>
+              <legend>
+                <h3>Grid Height</h3>
+              </legend>
+              <label><input checked id="len10" name="grid-height" type="radio" value="len10" />
+                10 squares</label>
+              <label><input id="len100" name="grid-height" type="radio" value="len100" />
+                100 squares</label>
+              <label><input id="len1000" name="grid-height" type="radio" value="len1000" />
+                1000 squares</label>
+            </fieldset>
 
-      <section>
-        <h2>Pi Memes</h2>
-        <form action="./submit-pi-meme.html">
-          <input
-            type="text"
-            name="pi-meme-url"
-            placeholder="Pi meme URL"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+            <fieldset>
+              <legend>
+                <h3>Grid Width</h3>
+              </legend>
+              <label><input checked id="wid10" name="grid-width" type="radio" value="wid10" />
+                10 squares</label>
+              <label><input id="wid100" name="grid-width" type="radio" value="wid100" />
+                100 squares</label>
+              <label><input id="wid1000" name="grid-width" type="radio" value="wid1000" />
+                1000 squares</label>
+            </fieldset>
 
-      <section>
-        <h2>Pumpkin Pi</h2>
-        <figure>
-          <a target="_blank" href="https://carliemartece.com"
-            ><img
-              src="./images/1116.jpg"
-              alt="Biro drawing of 137 digits of pi surrounding a pickaxe and pumpkin."
-          /></a>
-          <figcaption>
-            Pi-themed <strong>biro</strong> art by
-            <a target="_blank" href="https://carliemartece.com"
-              >Carlie Martece</a
-            >.
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-    <footer>
-      <p>© Copyright 2023 <a target="_blank" href="https://carliemartece.com">Carlie Martece</a>. All rights reserved.</p>
-    </footer>
-  </body>
+            <fieldset class="form-item">
+              <legend>
+                <h3>Grid Colours</h3>
+              </legend>
+              <label><input checked id="grey" name="grid-colour" type="radio" value="grey" />
+                Greyscale</label>
+              <label><input id="purple" name="grid-colour" type="radio" value="purple" />
+                Purples</label>
+            </fieldset>
+
+            <button class="form-item" id="submit" type="submit">Submit</button>
+          </form>
+          <!--TODO: Hack infinity to find all pi-->
+        </section>
+
+        <section>
+          <p>See Also...</p>
+          <h2>Pumpkin Pi</h2>
+          <figure>
+            <a target="_blank" href="https://carliemartece.com">
+              <img alt="Biro drawing of 137 digits of pi surrounding a pickaxe and pumpkin." class="centre" id="pumpkin-pi"
+                src="./images/1116.jpg" />
+            </a>
+            <figcaption>
+              <p>© Copyright 2023 <a target="_blank" href="https://carliemartece.com">Carlie Martece</a>. All rights
+                reserved.
+            </figcaption>
+          </figure>
+        </section>
+      </main>
+    </div>
+  </div>
+  <!-- <footer>
+    <p>© Copyright 2023 <a target="_blank" href="https://carliemartece.com">Carlie Martece</a>. All rights reserved.</p>
+  </footer> -->
+</body>
+
 </html>
