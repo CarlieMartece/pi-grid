@@ -3,33 +3,129 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>The Pi Maker</title>
+    <title>ThePiMaker</title>
   </head>
+
   <body>
     <main>
       <h1>Ey Up Pi Fans!</h1>
       <section>
-        <h2>Pick your pi...</h2>
+        <h2>Pick your <em>pi</em>...</h2>
         <p>
-          We can't show all the pi because it would take forever, but we can
+          We can't show all the pi, it would take forever. But we can
           show some of the pi.
         </p>
+        <form action="./pi-grid.html">
+          <fieldset>
+            <legend><h3>Grid Size</h3></legend>
+            <label
+              ><input
+                checked
+                id="L10W10"
+                name="grid-size"
+                type="radio"
+                value="L10W10"
+              />
+              10 x 10</label
+            >
+            <label
+              ><input
+                id="L100W100"
+                name="grid-size"
+                type="radio"
+                value="L100W100"
+              />
+              100 x 100</label
+            >
+            <label
+              ><input  
+                id="L100W1000"
+                name="grid-size"
+                type="radio"
+                value="L100W1000"
+              />
+              100 x 1000</label
+            >
+            <label
+              ><input
+                id="L1000W100"
+                name="grid-size"
+                type="radio"
+                value="L1000W100"
+              />
+              1000 x 100</label
+            >
+            <label
+              ><input
+                id="L1000W1000"
+                name="grid-size"
+                type="radio"
+                value="L1000W1000"
+              />
+              1000 x 1000</label
+            >
+          </fieldset>
+          
+          <fieldset>
+            <legend><h3>Grid Colours</h3></legend>
+            <label
+              ><input 
+                checked  
+                id="grey" 
+                name="grid-colour" 
+                type="radio" 
+                value="grey" 
+              />
+              Greyscale</label
+            >
+            <label
+              ><input
+                id="purple"
+                name="grid-colour"
+                type="radio"
+                value="purple"
+              />
+              Purples</label
+            >
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
         <!--TODO: Hack infinity to find all pi-->
       </section>
 
       <section>
+        <h2>Pi Memes</h2>
+        <form action="./submit-pi-meme.html">
+          <input
+            type="text"
+            name="pi-meme-url"
+            placeholder="Pi meme URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section>
         <h2>Pumpkin Pi</h2>
-        <p>
-          Here is some pi-themed biro art by
-          <a target="_blank" href="https://carliemartece.com">Carlie Martece</a
-          >.
-        </p>
-        <a target="_blank" href="https://carliemartece.com"
-          ><img
-            src="./images/1116.jpg"
-            alt="Biro drawing of 137 digits of pi surrounding a pickaxe and pumpkin."
-        /></a>
+        <figure>
+          <a target="_blank" href="https://carliemartece.com"
+            ><img
+              src="./images/1116.jpg"
+              alt="Biro drawing of 137 digits of pi surrounding a pickaxe and pumpkin."
+          /></a>
+          <figcaption>
+            Pi-themed <strong>biro</strong> art by
+            <a target="_blank" href="https://carliemartece.com"
+              >Carlie Martece</a
+            >.
+          </figcaption>
+        </figure>
       </section>
     </main>
+    <footer>
+      <p>© Copyright 2023 <a target="_blank" href="https://carliemartece.com">Carlie Martece</a>. All rights reserved.</p>
+    </footer>
   </body>
 </html>
